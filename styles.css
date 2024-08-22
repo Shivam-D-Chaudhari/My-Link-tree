@@ -1,0 +1,94 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: black;
+    color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s, transform 0.4s;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid purple;
+    transition: transform 0.4s;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(180, 0, 180);
+    transition: color 0.4s;
+}
+
+.bio {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+    transition: color 0.4s;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.icon {
+    color: purple;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: rgb(211, 133, 211);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    background-color: rgb(211, 133, 211);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s, border 0.3s;
+    border: 2px solid transparent; /* Start with a transparent border */
+}
+
+.link:hover {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    border: 2px solid rgb(211, 133, 211); /* Border becomes visible on hover */
+}
