@@ -5,10 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height */
     margin: 0;
-    transition: background-color 0.4s, color 0.4s;
-    padding-top: 30px; /* Added padding to create space above the container */
+    padding-top: 30px; /* Creates space above the container */
     padding-bottom: 30px;
     transition: background-color 0.4s, color 0.4s;
     overflow-y: auto; /* Allow vertical scrolling if content overflows */
@@ -23,7 +22,6 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.4s, transform 0.4s;
-    transform: translateY(-20px);
     animation: slideIn 0.5s ease forwards;
 }
 
